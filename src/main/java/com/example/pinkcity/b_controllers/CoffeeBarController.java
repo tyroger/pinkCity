@@ -11,13 +11,16 @@ import java.util.List;
 @RequestMapping("/coffeeBar")
 public class CoffeeBarController {
 
-    //todo : inject a bin to initiate a new service
+    @Autowired
     private CoffeeBarService service;
+
+    public CoffeeBarController(CoffeeBarService service){
+        this.service = service;
+    }
 
    @GetMapping("")
    public List<CoffeeBar> getAllCoffeeBar(){
-       // todo : how to manage Errors?
-       return null;
+       return this.service.getAllCoffeeBar();
     }
 
     @GetMapping("/{id}")
