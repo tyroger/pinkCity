@@ -16,7 +16,6 @@ public class CoffeeBarService {
 
     @Autowired
     private CoffeeBarRepository repo;
-
     public CoffeeBarService(CoffeeBarRepository repo){
         this.repo = repo;
     }
@@ -59,6 +58,5 @@ public class CoffeeBarService {
     public CoffeeBar deleteOneCoffeeBar(String id){
         return null;
     }
-
 
 }
