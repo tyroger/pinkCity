@@ -8,4 +8,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class APIResponseEntity {
     @JsonProperty(value = "records")
     private ApiRecordsEntity records;
+
+    public ApiRecordsEntity getRecords() {
+        return records;
+    }
+
+    public void setRecords(ApiRecordsEntity records) {
+        this.records = records;
+    }
 }
