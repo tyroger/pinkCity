@@ -58,4 +58,17 @@ public class CoffeeBar {
     public void setWebSiteUrl(String webSiteUrl) {
         WebSiteUrl = webSiteUrl;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("CoffeeBar{");
+        sb.append("id='").append(id).append('\'');
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", streetName='").append(streetName).append('\'');
+        sb.append(", postalCode=").append(postalCode);
+        sb.append(", phoneNumber='").append(phoneNumber).append('\'');
+        sb.append(", WebSiteUrl='").append(WebSiteUrl).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }
