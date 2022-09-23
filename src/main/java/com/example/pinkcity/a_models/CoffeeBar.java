@@ -8,6 +8,8 @@ public class CoffeeBar {
     private String name;
     private String streetName;
     private Integer postalCode;
+
+    private String city;
     private String phoneNumber;
     private String WebSiteUrl;
 
@@ -41,6 +43,14 @@ public class CoffeeBar {
 
     public void setPostalCode(Integer postalCode) {
         this.postalCode = postalCode;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getPhoneNumber() {
